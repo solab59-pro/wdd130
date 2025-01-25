@@ -1,16 +1,35 @@
+:root {--heading-background-color: #f06;
+    /* --heading-bakground-color2: darkgreen; */
+    --heading-text-color : #333;
+    --heading-font : 'Montserrat' , Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgb ( 0 0 0 / 0.1);
+}
+
 nav {background-color: darkblue; padding: 10px;}
 nav a {color: white; display: block; padding: 20px;}
-h1 {color: darkblue;}
+h1 {color: var(--heading-background-color);
+background-color : var(--heading-text-color);
+font-family: var(--heading-font);
+padding: var(--padding);
+}
+h2 {color: var(--heading-background-color)};
+/* tried using different color for this but the --heading-background-color2 isnt effecting the change */
+
 img {width: 150px; height: auto; border: 1px solid black; padding: 2px; box-shadow: 0 0 30px gray;}
-p {padding: 0;}
+p {padding: 0;
+/* color: var(--heading-background-color); all p i.e (name and state description) was affected and have same color */ 
+}
+
 main {max-width: 840px;}
 aside {width: 20rem;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    padding: var(--padding);
     background-color: #eee;
     color: #333;
-    text-align: center;    
+    text-align: center;  
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
 }
 
 aside img{
