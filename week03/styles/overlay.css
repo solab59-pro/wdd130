@@ -17,7 +17,7 @@ h2 {
 
 .herodiv {
 	margin: 10px auto;
-	/* position: relative; If removed, what happens?  */
+	/* position: relative; when removed takes the image into the bannner*/
 }
 
 .herodiv img {
