@@ -7,11 +7,10 @@
     --heading-font : 'Roboto' , serif;
     --paragraph-font : 'Montesrrat' , serif;}
     /* --padding: 1rem;
-    --border: 1px solid rgb ( 0 0 0 / 0.1);} * The comments were my initial work before correction from the instructor/
+    --border: 1px solid rgb ( 0 0 0 / 0.1);} * The comments were my initial work before correction from the instructor*/
 
 body {
-	/* max-width: 800px; */
-body {font-family: var(--paragraph-font);}
+    font-family: var(--paragraph-font);}
 
 h1, h2, h3, h4, h5, h6 {font-family: var(--heading-font);}
 
@@ -55,11 +54,7 @@ header, main, footer {
     font-size: 1.25rem
 }
 
-
-
-
-
-/* THese are my work before correction made
+/* THese are my work before correction made for week 3
 .hero img {display: block;
     width: 100%;
     height: auto;
@@ -88,3 +83,81 @@ p {font-family:"Roboto" , serif;
     font-weight: 400;
 color : var(--heading-text-color);
 } */
+
+/* The code beneath is for the week 4 update of About us page */
+header {
+    display:grid;
+    grid-template-columns:200px auto;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+nav {
+    display:flex;
+    justify-content: space-around;
+}
+
+nav a {
+    padding:1em;
+    font-family: var(--heading-font);
+    color:white;
+}
+
+nav a:hover {
+    background-color:white;
+    color: #484029;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 2em;
+    margin: 50px 0;
+}
+
+.history-section {
+    margin: 50px 0;
+    display:grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 20px;
+    align-items:center;
+    text-align: justify;
+}
+
+.history-img { 
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+.history-section>h2 {
+    grid-column: 1/-1;
+    grid-row : 1;
+    text-align: center;
+    padding-bottom: 1rem
+}
+
+.history h2,
+.adventures h2 {
+    grid-column: 1/-1;
+    justify-self : center;
+    padding: 1em 0;
+}
+
+.adventures {
+    display:grid;
+    margin:50px  0;
+    grid-template-columns: repeat(5, 1fr);
+    gap:1rem;
+    justify-items:center;
+}
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    margin-top: 100px;
+    background-color: var(--secondary-color);
+}
+
+footer p {color: var(--accent-color2);}
