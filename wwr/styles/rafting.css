@@ -1,17 +1,65 @@
 
-:root {--heading-background-color: #ff6e00;
-    --heading-text-color : #150000;
+:root {--primary-color: #ff6e00;
+    --secondary-color : #150000;
+    --accent-color1 : #ffff00;
+    --accent-color2 : #cecfcb;
+
     --heading-font : 'Roboto' , serif;
-    --padding: 1rem;
-    --border: 1px solid rgb ( 0 0 0 / 0.1);}
+    --paragraph-font : 'Montesrrat' , serif;}
+    /* --padding: 1rem;
+    --border: 1px solid rgb ( 0 0 0 / 0.1);} * The comments were my initial work before correction from the instructor/
 
 body {
-	max-width: 800px;
-	font-family: 'Roboto', serif;
-}
+	/* max-width: 800px; */
+body {font-family: var(--paragraph-font);}
+
+h1, h2, h3, h4, h5, h6 {font-family: var(--heading-font);}
 
 a {text-decoration : none; }
 
+header, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {position: relative;}
+
+.hero>img {width : 100%;}
+
+.hero h1 {
+    position:absolute;
+    top: 1em;
+    left:20%;
+    transform: translateX(50%);
+    background-color: var(--accent-color2);
+    padding: 1rem;
+}
+
+.hero article {
+    background-color: var(--accent-color2);
+    position:absolute;
+    top:15rem;
+    left:2rem;
+    right:2rem
+}
+
+.hero article img {
+    float:right;
+    margin:2rem;
+    width:13rem;
+    }
+
+.hero article p {
+    color : var(--secondary-color);
+    padding: 1rem;
+    font-size: 1.25rem
+}
+
+
+
+
+
+/* 
 .hero img {display: block;
     width: 100%;
     height: auto;
@@ -39,4 +87,4 @@ h1 {position: absolute ;
 p {font-family:"Roboto" , serif;
     font-weight: 400;
 color : var(--heading-text-color);
-}
+} */
