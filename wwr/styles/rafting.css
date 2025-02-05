@@ -39,7 +39,7 @@ header, main, footer {
     position:absolute;
     top:15rem;
     left:2rem;
-    right:2rem
+    right:2rem;
 }
 
 .hero article img {
@@ -51,7 +51,7 @@ header, main, footer {
 .hero article p {
     color : var(--secondary-color);
     padding: 1rem;
-    font-size: 1.25rem
+    font-size: 1.25rem ;
 }
 
 /* THese are my work before correction made for week 3
@@ -133,7 +133,7 @@ nav a:hover {
     grid-column: 1/-1;
     grid-row : 1;
     text-align: center;
-    padding-bottom: 1rem
+    padding-bottom: 1rem;
 }
 
 .history h2,
