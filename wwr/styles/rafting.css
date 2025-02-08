@@ -85,6 +85,20 @@ color : var(--heading-text-color);
 } */
 
 /* The code beneath is for the week 4 update of About us page */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1em;
+}
+
+.title {
+    grid-column:1/-1;}
+
+.center {
+    text-align:center;
+    justify-self:center;
+}
+
 header {
     display:grid;
     grid-template-columns:200px auto;
@@ -151,6 +165,51 @@ nav a:hover {
     justify-items:center;
 }
 
+figure {
+    margin:0;
+    padding:0;
+    background-color: var(--secondary-color);
+    color:#ccfbff;
+
+}
+
+figure:hover{
+    transform: scale(1.5);
+}
+
+figcaption {
+    text-align: center;
+    padding: .5rem;
+}
+
+.contact{
+    grid-column: 2/7;
+    grid-row: 1/5;
+    gap:2em;
+}
+
+.contact-fields{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.contact-fields label {
+    justify-self: right;
+}
+
+.contact-fields input {
+    justify-self:left;
+}
+
+.address {
+    grid-column: 7/12;
+    grid-row: 1/5;
+}
+
+.employees{
+    grid-column:2/12 ;
+}
+
 footer{
     display:flex;
     justify-content: space-between;
@@ -161,3 +220,7 @@ footer{
 }
 
 footer p {color: var(--accent-color2);}
+
+footer a {
+    color:#fff;
+}
